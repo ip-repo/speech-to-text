@@ -1,0 +1,37 @@
+body, html {
+    /*This removes any default margin that browsers might apply to the <body>
+    and <html> elements,ensuring there is no space around the edges of the page*/
+    margin: 0;
+    /*Similar to the margin, this removes any default padding that might be applied,
+     ensuring there is no space inside the edges of the page.*/
+    padding: 0;
+    /*This sets the height of both the <body> and <html> elements to 100% of the viewport height,
+    making sure they take up the full height of the browser window.*/
+    height: 100%;
+    /*This sets the width of both the <body> and <html> elements to 100% of the viewport width,
+     making sure they take up the full width of the browser window.*/
+    width: 100%;
+    /*This sets the background image for the <body> and <html> elements to the specified image located at '../asstes/background.png'.
+    The url() function is used to specify the path to the image.*/
+    background-image: url('../assets/background.png');
+    /*This ensures that the background image covers the entire area of the <body> and <html> elements,
+    scaling the image as necessary to cover the space without distorting its aspect ratio.*/
+    background-size: cover;
+    /*This prevents the background image from repeating. Without this,
+    the image might tile across the background if it is smaller than the viewport.*/ 
+    background-repeat: no-repeat;
+    /*This centers the background image both horizontally and vertically within the <body> and <html> elements.*/ 
+    background-position: center center;
+    /* Hides any content that overflows the element's boundaries */
+    overflow: hidden;
+    /* Enables flexbox layout for the container, allowing flexible and responsive design */
+    display: flex; 
+    /* Centers the flex items horizontally within the container */
+    justify-content: center;
+    /* Centers the flex items vertically within the container */
+    align-items: center;
+ 
+}
+
+
+
