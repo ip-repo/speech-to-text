@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const clear = document.getElementById('clear-image');
         const download = document.getElementById('download-image');
         const recognize = document.getElementById('speech-image');
-        textArea.value = "This browser do not support speech recognition. Try with chrome or edge."
+        textArea.value = "This browser do not support speech recognition. Try with chrome."
         
         settings.onclick = null;
         clear.onclick = null;
