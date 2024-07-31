@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech To Text</title>
+    <!-- Link to external CSS files for styling -->
+    <link rel="stylesheet" href="./styles/background.css">
+    <link rel="stylesheet" href="./styles/container.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    
+
+</head>
+<body>
+    <!-- Main container for the webpage content -->
+    <div class="container">
+        <div class="settings">
+            <div class="settings-div">
+                <!-- Settings image -->
+                <div class="settings-image">
+                    <img src="./assets/images/settings.png" height="80" width="80" id="settings-image">   
+                </div>
+            </div>
+            <!-- Clear, download, and speech recognition images -->
+            <div class="clear-download-speech">
+                <img src="./assets/images/clear.png" height="80" width="80" onclick="clearTextArea()" id="clear-image">
+                <img src="./assets/images/download.png" height="80" width="80" onclick="downloadText()" id="download-image">
+                <img src="./assets/images/speech-image-1.png" height="80" width="80" id="speech-image" onclick="startRecognition()">
+            </div>
+        </div>
+        <!-- Text area for displaying recognized speech -->
+        <textarea id="text-area"></textarea>
+    </div>
+    <!-- Modal Popup -->
+      <div id="settings" class="modal">
+        <div class="modal-content">
+            <!-- Close button for the modal -->
+            <span class="close">&times;</span>
+            <!-- Modal row for language selection -->
+            <div class="modal-row">
+                <img src="./assets/images/language.png" height="80" width="80">
+                <p>Select your preferred language.</p>
+                <select id="lang-box" style="height: 20px; width: 65px;"></select>
+            </div>
+            <!-- Explanation paragraph -->
+            <p id="explanation">Use this webpage to convert speech to text.</p>
+        </div>
+    </div>
+    <!-- Link to external JavaScript files -->
+    <script src="./scripts/languages-dict.js"></script>
+    <script src="./scripts/dom-content-loaded.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/clear-and-download.js"></script>
+    <script src="./scripts/speech-recognition.js"></script>
+</body>
+</html>
+
