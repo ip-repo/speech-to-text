@@ -1,0 +1,89 @@
+.container {
+    /* Enables flexbox layout for the container */
+    display: flex;
+    /* Arranges flex items in a column (vertically) */ 
+    flex-direction: column;
+    /* Centers the flex items horizontally within the container */ 
+    justify-content: center; 
+    /* Centers the flex items vertically within the container */
+    align-items: center;
+     /* Sets the height of the container to 100% of its parent element */ 
+    height: 95%;
+    /* Sets the width of the container to 100% of its parent element */
+    width: 80%;
+    /* Prevents any content from overflowing the container */ 
+    overflow: hidden;
+     
+}
+
+.settings {
+    /* Enables flexbox layout for the settings container */
+    display: flex; 
+    /* Distributes space between the flex items */
+    justify-content: space-between; 
+    /* Centers the flex items vertically within the container */
+    align-items: center; 
+    /* Ensures the settings container takes up the full width */
+    width: 100%; 
+}
+.settings img{
+    /* Smooth transition effect for the filter property */
+    transition: filter 0.3s ease;   
+}
+
+.settings img:hover {
+    /* Invert the colors of the image by 20% */
+    filter: invert(20%);
+}
+
+
+.settings-div {
+    /* Enables flexbox layout for the settings container */
+    display: flex;
+    /* Arranges flex items in a row (horizontally) */
+    flex-direction: row; 
+    /* Centers the flex items vertically within the container */
+    align-items: center; 
+}
+
+.settings-image {
+    /* Enables flexbox layout for the settings-image */
+    display: flex; 
+    /* Arranges flex items in a column (vertically) */
+    flex-direction: column;
+    /* Centers the flex items horizontally within the container */ 
+    align-items: center; 
+    /* Adds some space between the containers */
+    margin-right: 20px; 
+}
+
+.clear-download-speech {
+    /* Enables flexbox layout for the clear-download-speech container */
+    display: flex; 
+    /* Arranges flex items in a row (horizontally) */
+    flex-direction: row; 
+    /* Centers the flex items vertically within the container */
+    align-items: center; 
+    
+}
+
+textarea {
+    /* Removes any background color or image */
+    background: none;
+    /* Allows the textarea to grow and fill the remaining space */
+    flex-grow: 1; 
+    /* Ensures the textarea takes up the full width of the container */
+    width: 100%;
+    /* Adds some space above the textarea */ 
+    margin-top: 10px; 
+    /* Ensures padding and border are included in the element's total width and height */
+    box-sizing: border-box;
+    /* Adds a white border around the textarea */
+    border: 2px solid white;
+    /* Rounds the corners of the border */
+    border-radius: 2px;
+    /* Prevents the user from resizing the textarea */
+    resize: none; 
+}
+
+

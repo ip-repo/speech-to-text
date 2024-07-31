@@ -1,0 +1,87 @@
+.modal {
+    /* Hidden by default */
+    display: none; 
+    /* Stay in place */
+    position: fixed; 
+    /* Sit on top *
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    /* Full width */
+    width: 100%; 
+    /* Full height */
+    height: 100%; 
+    /* Disable scroll  */
+    overflow: hidden; 
+    /* Background image for the modal */
+    background-image: url('../assets/modal-background.png'); 
+    /* Cover the entire modal area */
+    background-size: cover;
+    /* Do not repeat the background image */
+    background-repeat: no-repeat;
+    /* Center the background image */
+    background-position: center center;
+}
+
+.modal-content {
+    /*backgound color*/
+    background-color:rgba(0, 0, 0, 0.05);
+    /* 2% from the top and centered horizontally */
+    margin: 2% auto; 
+    /* Padding inside the modal content */
+    padding: 20px;
+    /* White border around the modal content */
+    border: 3px solid #ffffff;
+    /* Slightly rounded corners */
+    border-radius: 2px;
+    /* Width of the modal content */
+    width: 80%;
+    /* Flexbox layout */
+    display: flex;
+    /* Column layout for flex items */
+    flex-direction: column;
+    /* Position relative to the modal */
+    position: relative;
+}
+
+.modal-row {
+    /* Grid layout */
+    display: grid;
+    /* Three columns: image, text, input/select */
+    grid-template-columns: auto 1fr auto; 
+    /* Center items vertically */
+    align-items: center; 
+    /* Space below each row */
+    margin-bottom: 10px;
+}
+
+.modal-row p {
+     /* Margin around paragraph elements */
+    margin: 15px ;
+}
+
+
+.close {
+    /* Light gray color for the close button */
+    color: #aaa;
+    /* Position relative to the modal content */
+    position: absolute;
+    /* 10px from the top */
+    top: 10px;
+    /* 10px from the right */
+    right: 10px;
+    /* Large font size */
+    font-size: 28px;
+    /* Bold font weight */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    /* Change color to black on hover or focus */
+    color: black;
+    /* Remove underline */
+    text-decoration: none;
+    /* Pointer cursor on hover */
+    cursor: pointer;
+}
